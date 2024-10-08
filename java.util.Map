@@ -1,0 +1,45 @@
+Map +> values are stored in key value pair. Order is not maintained in map.
+
+Populer Implementaion of Map
+
+java.util.HashMap
+java.util.Hashtable
+java.util.EnumMap
+java.util.IdentityHashMap
+java.util.LinkedHashMap
+java.util.Properties
+java.util.TreeMap
+java.util.WeakHashMap
+
+
+  HashMap and TreeMap are most used implementation. HashMap does not maintain the order, whereas treeMap maintains tyhe order in which pairs are entered.
+
+  Map<String, MyObject> map = new HashMap<>();
+
+map.put("key name", obj)   // to insert object in map.Only objects can be used as key/value in map. 
+
+
+null key and value can be stored in map
+
+  map.putAll(mapB)  //this will copy all the key value pairs from mapB to mapA
+
+  map.get(key) // returns the value stored for given key
+  map.getOrDefault(key, defaultValue)   //if key is present it will its value otherwise default value.
+
+  map.containsKey(key) // returns boolean value
+  map.containsValue(value) // return boolean value
+
+  Iterator iterator = map.keySet().iterator();   //keyset returns a set of all the keys stored in map
+
+map.values() // returns a list of all the kvalues stored in map.
+
+
+
+  map.remove(key)
+  map.clear()
+
+  map.replace(key,value)  // it will only replace if key is present in the map otherwise ignore
+
+  map.isEmpty()  //check if map is empty
+
+  
