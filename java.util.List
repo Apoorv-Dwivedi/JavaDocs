@@ -1,0 +1,55 @@
+package name : java.util.List
+
+Iterable Interface => Collection Interface => List Interface   
+
+Iterable interface has only one method called iterator() , this method an object of Iterator , so all list interface implementation have iterator() method with returns Iterator object which can be used to iterate over the collection.
+
+Collection interface has set of abstract methods which needs to be implemented.
+
+Implementation of List interface 
+
+  1) java.util.ArrayList
+  2) java.util.Stack
+  3) java.util.LinkedList
+  4) java.util.Vector 
+
+List<MyObject> obj = new ArrayList();
+List<MyObject> obj = new Stack();
+List<MyObject> obj = new LinkedList();
+List<MyObject> obj = new Vector();
+
+  
+by using generic definition we don't have to cast the object return by list everytime, If generic is not used we can store any type of object and that needs to cast everytime we want to access them.
+
+
+Important methods.
+
+1) obj.add(myObject);
+2) obj.add(index,myObj);    // to add object at specified index
+3) obj.addAll(Collection Object)  // this will add all the elements in this colection object to the list.
+4) obj.get(index)  // returns object at specified index
+5) obj.indexOf(object)
+6) obj.lastIndexOf(myObject)
+7) obj.remove(index);
+8) obj.clear();
+9) obj.retainAll(collectionObj);
+10) obj.subList(1,5)   // include element from index 1 till index 4 ( exclude index 5)
+11) Object[] object = obj.toArray();  // return an array of object type
+12) String[] str = list.toArray(new String[0]);  // return an array of string 
+13) List<String> = (List<String>)Arrays.asList(arr);
+
+
+
+java.util.Collections // this class has few methods which can be used
+
+
+  1) Collections.sort(obj)
+  2) Collection.sort(obj,comparatorClassObject);
+
+
+for(int i : arrayListObj){
+}
+
+Stream<MyObj> obj.stream();
+
+obj.forEach( myObj => myObj.getId());
