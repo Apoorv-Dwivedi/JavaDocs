@@ -1,0 +1,41 @@
+
+Being a subtype of collection interface , all the methods will be valid for set as well.
+In set order is not maintained, so pulling elements based on index is not possible
+
+Important Implementation of Set Interface
+
+  1) java.util.EnumSet
+  2) java.util.LinkedHashSet
+  3) java.util.TreeSet
+  4) java.util.HashSet
+
+
+Important Method
+
+  1) set.isEmpty() 
+  2) set.remove(obj);
+  3) set.add(obj);
+  4) set.addAll(collectionObj);
+  5) set.removeAll(collectionObj);
+
+
+java.util.SortedSet   //It is an interface and subtype of set, with only difference that elements are stored in sorted order, and when we iterate over sorted set elements are returned in sorted order.
+
+  TreeSet is an implementation of sorted set
+
+
+  SortedSet sortedSet = new TreeSet();
+SortedSet<String> sortedSet = new TreeSet<>();
+
+Comparator comparator = new MyComparatorImpl();  // has a method compareTo, which is used to sort the elements
+
+SortedSet sortedSet = new TreeSet(comparator);
+
+
+1) sortedSet.first()
+2) sortedSet.last();
+
+
+java.util.NavigableSet // This is also an interface and a subtype of Sorted Set, TreeSet is a implementation of navigable set.
+
+  
